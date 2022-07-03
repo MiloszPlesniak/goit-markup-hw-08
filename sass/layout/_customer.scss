@@ -1,0 +1,31 @@
+.tittle-customers {
+    font-size: 36px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.customers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customres__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+&:hover {
+    fill: var(--main-blue);
+    border-color: var(--main-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+}

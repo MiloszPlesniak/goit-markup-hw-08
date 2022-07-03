@@ -1,0 +1,34 @@
+.heading-offer {
+    font-size: 36px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer__item {
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.offer__text {
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+    width: 370px;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}

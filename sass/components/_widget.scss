@@ -1,0 +1,36 @@
+.widget {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
+
+.widget__tittle {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.widget__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #fff;
+    margin-top: 20px;
+
+
+&:hover {
+    background-color: var(--main-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

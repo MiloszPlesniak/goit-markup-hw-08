@@ -1,0 +1,19 @@
+{
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.fontSize": 16,
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.formats": [
+    // This is Default.
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    // You can add more
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css/"
+    },
+  ]
+}
