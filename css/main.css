@@ -25,13 +25,13 @@ a {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo {
@@ -51,13 +51,19 @@ a {
   color: #fff;
 }
 
+.hamburger {
+  fill: var(--text-color);
+  background-color: #fff;
+  border: none;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  height: 80px;
+  height: 60px;
   margin: 0 auto;
 }
 
@@ -124,14 +130,13 @@ a {
 
 .footer {
   background: #2f303a;
-  height: 252px;
   padding-bottom: 60px;
 }
 
 .footer__list {
-  display: flex;
-  align-items: center;
+  display: block;
   padding-top: 60px;
+  text-align: center;
 }
 
 .contact-footer {
@@ -139,7 +144,7 @@ a {
   line-height: 171%;
   letter-spacing: 0.03em;
   color: var(--main-grey);
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 60px 0px;
 }
 
 .contact-footer__address {
@@ -175,7 +180,7 @@ a {
 .widget {
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  margin: 0 auto 60px;
 }
 
 .widget__tittle {
@@ -207,10 +212,6 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter {
-  margin-left: 77px;
-}
-
 .newsletter__tittle {
   text-transform: uppercase;
   font-size: 14px;
@@ -218,10 +219,12 @@ a {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .newsletter__form {
-  display: flex;
+  display: block;
+  text-align: center;
 }
 
 .newsletter__input {
@@ -233,6 +236,7 @@ a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #fff;
+  margin-bottom: 20px;
 }
 .newsletter__input::placeholder {
   font-weight: 400;
@@ -266,19 +270,25 @@ a {
 .banner {
   background-color: #2f303a;
   text-align: center;
-  height: 600px;
-  background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/baner.jpg);
+  height: 400px;
+  width: 480px;
+  background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-mobile/baner480x400@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0px auto;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-mobile/baner480x400@1x.jpg);
+  }
+}
 .banner__tittle {
   margin-bottom: 30px;
-  padding-top: 106px;
-  font-size: 44px;
+  padding-top: 60px;
+  font-size: 26px;
   line-height: 136%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -303,8 +313,8 @@ a {
 }
 
 .lorem {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  margin: 0 auto;
 }
 
 .lorem__item {
@@ -314,7 +324,7 @@ a {
 
 .lorem__icon {
   background-color: #f5f4fa;
-  width: 270px;
+  width: 100%;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -328,6 +338,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .lorem__text {
@@ -336,6 +347,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-grey);
   margin: 0px;
+  text-align: center;
 }
 
 .heading-offer {
@@ -388,18 +400,19 @@ a {
 .team {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .team__item {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 0 auto;
 }
 
 .team__box {
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
+  margin-bottom: 30px;
 }
 
 .team__name {
@@ -425,7 +438,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 16px 32px 32px 30px;
+  padding: 16px 24px 32px 30px;
 }
 
 .social-media__icon {
@@ -454,11 +467,14 @@ a {
 
 .customers {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .customres__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -466,6 +482,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: calc((100% - 30px) / 2);
 }
 .customres__item:hover {
   fill: var(--main-blue);
@@ -637,7 +654,7 @@ a {
 
 .buttons-sort {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button-sort__item {
@@ -650,7 +667,7 @@ a {
   text-align: left;
   cursor: pointer;
   line-height: 1.6;
-  margin: 0px 4px;
+  margin: 0px 4px 15px;
   padding: 6px 22px;
 }
 .button-sort__item:hover {
@@ -704,13 +721,17 @@ a {
 }
 
 .overlay {
-  width: 370px;
+  width: 100%;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(305px);
+  transform: translateY(311px);
+  padding-left: 24px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .overlay__description {
@@ -720,13 +741,18 @@ a {
   color: #fff;
   width: 301px;
   height: 196px;
-  position: absolute;
-  top: 49px;
-  left: 24px;
+  position: relative;
 }
 
 .product__item:hover .overlay {
   transform: translateY(0px);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hidde-component {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: none;
 }/*# sourceMappingURL=main.css.map */

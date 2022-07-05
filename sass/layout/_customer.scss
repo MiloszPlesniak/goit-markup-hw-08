@@ -8,11 +8,16 @@
 
 .customers {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    
+    
 }
 
 .customres__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -20,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: calc((100% - 30px) / 2);
 
 
 &:hover {

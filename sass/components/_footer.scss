@@ -1,14 +1,14 @@
 .footer {
     background: #2f303a;
-    height: 252px;
+    
 
     padding-bottom: 60px;
 }
 
 .footer__list {
-    display: flex;
-    align-items: center;
+    display: block;
     padding-top: 60px;
+    text-align: center;
 }
 
 .contact-footer {
@@ -16,7 +16,7 @@
     line-height: 171%;
     letter-spacing: 0.03em;
     color: var(--main-grey);
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 60px 0px;
 }
 
 .contact-footer__address {

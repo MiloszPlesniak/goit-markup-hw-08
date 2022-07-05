@@ -1,5 +1,5 @@
 .newsletter {
-    margin-left: 77px;
+    
 }
 
 .newsletter__tittle {
@@ -9,10 +9,12 @@
     letter-spacing: 0.03em;
     color: #fff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .newsletter__form {
-    display: flex;
+    display: block;
+    text-align: center;
 }
 
 .newsletter__input {
@@ -24,6 +26,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: #fff;
+    margin-bottom: 20px;
 
 
 &::placeholder {

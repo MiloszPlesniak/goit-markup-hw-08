@@ -3,6 +3,7 @@
 @import "./base/container";
 @import "./base/section";
 @import "./components/logo";
+@import "./components/hamburger";
 @import "./components/page__header";
 @import "./components/navigation";
 @import "./components/conctact";
@@ -17,4 +18,5 @@
 @import "./utills/vissualy-hidden";
 @import "./components/window-modal";
 @import "./page/buttons-sort";
-@import "./page/product"
+@import "./page/product";
+@import "./utills/hidde-component";

@@ -1,21 +1,31 @@
 .banner {
     background-color: #2f303a;
     text-align: center;
-    height: 600px;
+    height: 400px;
+    width: 480px;
     background-image: linear-gradient(rgba(98, 100, 110, 0.4),
             rgba(98, 100, 110, 0.4)),
-        url(../imagines/baner.jpg);
+        url(../imagines/banner-images/banner-mobile/baner480x400@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1600px;
+    max-width: $phone;
     margin: 0px auto;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .banner {
+        background-image: linear-gradient(rgba(98, 100, 110, 0.4),
+                rgba(98, 100, 110, 0.4)),
+            url(../imagines/banner-images/banner-mobile/baner480x400@1x.jpg);
+    }
 }
 
 .banner__tittle {
     margin-bottom: 30px;
-    padding-top: 106px;
-    font-size: 44px;
+    padding-top: 60px;
+    font-size: 26px;
     line-height: 136%;
     letter-spacing: 0.06em;
     text-transform: uppercase;

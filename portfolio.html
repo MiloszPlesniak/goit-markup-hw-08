@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,7 +22,7 @@
           ><span>Web</span><span class="logo--dark">Studio</span></a
         >
         <!-- Mein Navigation -->
-        <nav>
+        <nav class="hidde-component">
           <ul class="navigation">
             <li class="navigation__item">
               <a class="navigation__link" href="index.html">Agencja</a>
@@ -36,7 +36,7 @@
           </ul>
         </nav>
         <!-- Contact -->
-        <ul class="contact">
+        <ul class="contact hidde-component">
           <li>
             <div>
               <a
@@ -61,6 +61,11 @@
             </div>
           </li>
         </ul>
+        <button class="hamburger" type="button">
+          <svg class="" width="24" height="24">
+            <use href="imagines/icons.svg.svg#hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -88,10 +93,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/technocrack.jpg"
+                  src="imagines/mobile-portfolio/technocrack450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/technocrack450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/technocrack450x294@x2.png 900w,
+                  imagines/tablet-portfolio/technocrack354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/technocrack354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/technocrack370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/technocrack370x294@x2.png 740w"
                   alt="Laptop z otwartą internetową"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -110,10 +121,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/grafikaneworleavsgoldenstar.jpg"
+                  src="imagines/mobile-portfolio/grafikaneworamvsgoldenstar450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/grafikaneworamvsgoldenstar450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/grafikaneworleavsgoldenstar450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/grafikaneworamvsgoldenstar354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/grafikaneworamvsgoldenstar354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/grafikaneworleavsgoldenstar370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/grafikaneworleavsgoldenstar370x294@x2.jpg 740w"
                   alt="Dwójka koszykarzy"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -132,10 +149,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/restaurantjaseafoof.jpg"
+                  src="imagines/mobile-portfolio/restauracjaseafood450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/restauracjaseafood450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/restaurantjaseafoof450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/restauracjaseafood354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/restauracjaseafoof354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/restaurantjaseafoof370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/restaurantjaseafoof370x294@x2.jpg 740w"
                   alt="Logo restauracji z rekinem"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -154,10 +177,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/projectprime.jpg"
+                  src="imagines/mobile-portfolio/projektprime450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/projektprime450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/projectprime450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/projectprime354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/projectprime354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/projectprime370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/projectprime370x294@x2.jpg 740w"
                   alt="Czarne słuchawki"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -176,10 +205,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/projectboxes.jpg"
+                  src="imagines/mobile-portfolio/projektboxes450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/projektboxes450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/projectboxes450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/projektboxes354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/projektboxes354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/projectboxes370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/projectboxes370x294@x2.jpg 740w"
                   alt="Dwa pudełka"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -198,10 +233,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/inspirationhasnoborders.jpg"
+                  src="imagines/mobile-portfolio/inspirationhasnoborders450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/inspirationhasnoborders450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/inspirationhasnoborders450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/inspirationhasnoborders354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/inspirationhasnoborders354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/inspirationhasnoborders370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/inspirationhasnoborders370x294@x2.jpg 740w"
                   alt="Prezentacja strony"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -220,10 +261,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/magazynlimitedddition.jpg"
+                  src="imagines/mobile-portfolio/magazynlimitededition450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/magazynlimitededition450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/magazynlimitedddition450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/magazynlimitedddition354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/magazynlimitedddition354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/magazynlimitedddition370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/magazynlimitedddition370x294@x2.jpg 740w"
                   alt="Gazeta"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -242,10 +289,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/projectlab.jpg"
+                  src="imagines/mobile-portfolio/projektlab450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/projektlab450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/projectlab450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/projectlab354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/projectlab354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/projectlab370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/projectlab370x294@x2.jpg 740w"
                   alt="Zawieszka z napisem LAB"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">
@@ -264,10 +317,16 @@
             <li>
               <figure class="product__item">
                 <img
-                  src="imagines/growingbusiness.jpg"
+                  src="imagines/mobile-portfolio/growingbusiness450x294@x1.jpg"
+                  srcset="
+                  imagines/mobile-portfolio/growingbusiness450x294@x1.jpg 450w,
+                  imagines/mobile-portfolio/growingbusiness450x294@x2.jpg 900w,
+                  imagines/tablet-portfolio/growingbusiness354x294@x1.jpg 354w,
+                  imagines/tablet-portfolio/growingbusiness354x294@x2.jpg 708w,
+                  imagines/desktop-portfolio/growingbusiness370x294@x1.jpg 370w,
+                  imagines/desktop-portfolio/growingbusiness370x294@x2.jpg 740w"
                   alt="Praca przy laptopie"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 />
                 <div class="overlay">
                   <p class="overlay__description">

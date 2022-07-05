@@ -1,6 +1,6 @@
 .buttons-sort {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .button-sort__item {
@@ -13,8 +13,8 @@
     text-align: left;
     cursor: pointer;
     line-height: 1.6;
-    margin: 0px 4px;
-    padding: 6px 22px;
+    margin: 0px 4px 15px;
+    padding: 6px 22px ;
 
 
 &:hover {
