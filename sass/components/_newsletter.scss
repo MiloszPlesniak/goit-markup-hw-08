@@ -1,5 +1,5 @@
 .newsletter {
-    
+   
 }
 
 .newsletter__tittle {
@@ -56,4 +56,26 @@
     margin-left: 24px;
     position: relative;
     top: 6px;
+}
+@media screen and (min-width:$tablet) and (max-width:1199px) {
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 90px;
+    }
+    .newsletter__tittle{
+    
+    }
+    .newsletter__input{
+        width: 450px;
+        
+    }
+    .btn-newsletter{
+        margin: 0px auto
+    }
+    .newsletter__form{
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -10,7 +10,7 @@
 
 .lorem__icon {
     background-color: #f5f4fa;
-    width: 100%;
+    width: 450px;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -35,4 +35,19 @@
     color: var(--main-grey);
     margin: 0px;
     text-align: center;
+}
+@media screen and (min-width:$tablet) and (max-width:1199px) {
+    .lorem__item{
+        width: 354px;
+        display: flex;
+    }
+    .lorem__icon{
+        width: 354px;
+    }
+    
+    .lorem{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 }

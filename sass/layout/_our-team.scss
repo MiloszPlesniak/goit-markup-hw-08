@@ -16,6 +16,7 @@
     justify-content: space-between;
     flex-direction: column;
     margin: 0 auto;
+    
 }
 
 .team__item {
@@ -77,4 +78,10 @@
     fill: #fff;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+@media screen and (min-width:$tablet) and (max-width:1199px) {
+    .team{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }

@@ -29,6 +29,11 @@ a {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -63,8 +68,7 @@ a {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  height: 60px;
-  margin: 0 auto;
+  min-height: 60px;
 }
 
 .navigation {
@@ -104,6 +108,11 @@ a {
   bottom: -32px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .active-link::after {
+    bottom: -22px;
+  }
+}
 .contact {
   display: flex;
   justify-content: space-between;
@@ -128,15 +137,26 @@ a {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    flex-direction: column;
+    margin-right: 15px;
+  }
+
+  .contact__link {
+    font-size: 12px;
+  }
+}
 .footer {
   background: #2f303a;
   padding-bottom: 60px;
 }
 
 .footer__list {
-  display: block;
+  display: flex;
   padding-top: 60px;
   text-align: center;
+  flex-direction: column;
 }
 
 .contact-footer {
@@ -177,6 +197,13 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 76px;
+  }
+}
 .widget {
   width: 206px;
   height: 80px;
@@ -267,11 +294,32 @@ a {
   top: 6px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+  }
+
+  .newsletter__input {
+    width: 450px;
+  }
+
+  .btn-newsletter {
+    margin: 0px auto;
+  }
+
+  .newsletter__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .banner {
   background-color: #2f303a;
   text-align: center;
-  height: 400px;
-  width: 480px;
+  min-height: 400px;
+  min-width: 480px;
   background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-mobile/baner480x400@1x.jpg);
   background-size: cover;
   background-position: center;
@@ -299,7 +347,7 @@ a {
   background: var(--main-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 0px;
+  border: none;
   color: #fff;
   font-weight: 700;
   font-size: 16px;
@@ -312,6 +360,25 @@ a {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .banner {
+    min-height: 400px;
+    min-width: 768px;
+    background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-tablet/banner768x400@x1.jpg);
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-tablet/banner768x400@x2.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .banner__tittle {
+    font-size: 26px;
+    line-height: 162%;
+  }
+}
 .lorem {
   display: block;
   margin: 0 auto;
@@ -324,7 +391,7 @@ a {
 
 .lorem__icon {
   background-color: #f5f4fa;
-  width: 100%;
+  width: 450px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -350,6 +417,21 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .lorem__item {
+    width: 354px;
+    display: flex;
+  }
+
+  .lorem__icon {
+    width: 354px;
+  }
+
+  .lorem {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .heading-offer {
   font-size: 36px;
   line-height: 117%;
@@ -457,6 +539,12 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 .tittle-customers {
   font-size: 36px;
   line-height: 117%;
@@ -512,8 +600,8 @@ a {
   position: relative;
   left: 50%;
   top: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -540,8 +628,8 @@ a {
 }
 
 .form-contact {
-  width: 448px;
-  height: 501px;
+  width: 370px;
+  height: 555px;
   position: relative;
   left: 40px;
   top: 40px;
@@ -550,9 +638,8 @@ a {
 .form-contact__tittle {
   text-align: center;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   letter-spacing: 0.03em;
-  margin-bottom: 12px;
 }
 .form-contact__tittle:focus-within {
   fill: var(--main-blue);
@@ -565,46 +652,42 @@ a {
   letter-spacing: 0.01em;
   color: var(--main-grey);
   margin-bottom: 4px;
-  position: absolute;
+  position: relative;
 }
 
 .form-contact__icon {
-  position: relative;
-  left: 15px;
-  top: 30px;
+  position: absolute;
+  margin: 14px 0px 0px 15px;
   z-index: 2;
 }
 
 .form-contact__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
   position: relative;
-  padding-left: 42px;
+  padding-left: 30px;
 }
-.form-contact__input:focus-within {
+.form-contact__input:focus {
   border-color: var(--main-blue);
 }
 
 .form-contact__placeholder {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 12px 16px;
-  margin-top: 16px;
   resize: none;
+  margin-bottom: 20px;
 }
 .form-contact__placeholder::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-.form-contact__placeholder:focus-within {
-  border-color: var(--main-blue);
+  padding: 12px 16px;
 }
 
 .form-contact__btn {
@@ -622,14 +705,23 @@ a {
   cursor: pointer;
 }
 
+.focus-color-modal {
+  position: relative;
+}
+.focus-color-modal:focus-within {
+  fill: var(--main-blue);
+  border-color: var(--main-blue);
+  color: var(--main-blue);
+}
+
 .checbox {
   appearance: none;
   width: 16px;
   height: 16px;
   border: 1px solid;
-  position: relative;
-  top: 22px;
-  left: 15px;
+  position: absolute;
+  top: 21px;
+  right: 350px;
 }
 .checbox:checked {
   background-color: var(--main-blue);
@@ -638,12 +730,12 @@ a {
 }
 
 .checbox__regulations {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--main-grey);
   position: relative;
-  left: 38px;
+  left: 28px;
 }
 
 .checbox__reference {
@@ -677,6 +769,11 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buttons-sort {
+    justify-content: center;
+  }
+}
 .product {
   display: flex;
   flex-wrap: wrap;
@@ -750,9 +847,28 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hidde-component {
+.hidde-naw {
   visibility: hidden;
-  opacity: 0;
   pointer-events: none;
   display: none;
+}
+
+.hidde-offer {
+  visibility: hidden;
+  pointer-events: none;
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hidde-naw {
+    visibility: visible;
+    display: flex;
+    pointer-events: all;
+  }
+
+  .hidde-bnt {
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

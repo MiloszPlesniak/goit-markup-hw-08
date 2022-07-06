@@ -3,3 +3,8 @@
     max-width: 480px;
     margin: 0 auto;
 }
+@media screen and (min-width:$tablet) and (max-width:1199px) {
+    .container{
+        max-width: $tablet;
+    }
+}

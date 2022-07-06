@@ -1,6 +1,23 @@
-.hidde-component{
+.hidde-naw{
     visibility: hidden;
-    opacity: 0;
     pointer-events: none;
     display: none;
+}
+.hidde-offer {
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+}
+
+@media screen and (min-width:$tablet) and (max-width:1199px) {
+    .hidde-naw{
+        visibility: visible;
+        display: flex;
+        pointer-events: all;
+    }
+.hidde-bnt{
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+}
 }

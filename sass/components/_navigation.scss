@@ -38,3 +38,8 @@
     bottom: -32px;
 }
 }
+@media screen and (min-width:$tablet) and (max-width:1199px){
+    .active-link::after{
+        bottom: -22px;
+    }
+}

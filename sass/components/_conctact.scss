@@ -20,3 +20,13 @@
 .contact__icon {
   margin-right: 10px;
 }
+@media screen and (min-width:$tablet) and (max-width:1199px){
+  .contact{
+    flex-direction: column;
+    margin-right: 15px;
+  }
+  .contact__link{
+    font-size: 12px;
+    
+  }
+}
