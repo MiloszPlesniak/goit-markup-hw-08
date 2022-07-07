@@ -64,9 +64,7 @@
         justify-content: center;
         margin-left: 90px;
     }
-    .newsletter__tittle{
     
-    }
     .newsletter__input{
         width: 450px;
         
@@ -77,5 +75,14 @@
     .newsletter__form{
         display: flex;
         flex-direction: column;
+    }
+}
+@media screen and (min-width:$desktop){
+    .newsletter{
+        margin-top: 10px;
+        margin-left: 77px;
+    }
+    .newsletter__form{
+        display: flex;
     }
 }

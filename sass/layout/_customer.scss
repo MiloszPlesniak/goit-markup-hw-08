@@ -35,3 +35,8 @@
     cursor: pointer;
 }
 }
+@media screen and (min-width:$desktop) {
+    .customers{
+        flex-wrap: nowrap;
+    }
+}

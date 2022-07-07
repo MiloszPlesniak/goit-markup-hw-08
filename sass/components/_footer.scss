@@ -1,7 +1,5 @@
 .footer {
     background: #2f303a;
-    
-
     padding-bottom: 60px;
 }
 
@@ -58,4 +56,18 @@
         flex-wrap: wrap;
         margin-left: 76px;
     }
+}
+@media screen and (min-width:$desktop) {
+    .footer__list{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    .contact-footer{
+        padding-bottom: 0px;
+        
+    }
+    
 }

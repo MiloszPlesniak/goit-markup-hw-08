@@ -2,3 +2,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+@media screen and (min-width:$desktop) {
+    .section{
+        padding: 94px 0px 94px 0px;
+    }
+}

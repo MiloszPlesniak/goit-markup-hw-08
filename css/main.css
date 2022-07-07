@@ -25,8 +25,9 @@ a {
 }
 
 .container {
-  max-width: 480px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0px auto;
+  max-width: 767px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -34,11 +35,21 @@ a {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px 94px 0px;
+  }
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -60,6 +71,7 @@ a {
   fill: var(--text-color);
   background-color: #fff;
   border: none;
+  margin-right: 15px;
 }
 
 .page-header {
@@ -67,10 +79,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  width: 100%;
   min-height: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header {
+    max-width: 1200px;
+    height: 80px;
+  }
+}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -204,6 +222,17 @@ a {
     margin-left: 76px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-footer {
+    padding-bottom: 0px;
+  }
+}
 .widget {
   width: 206px;
   height: 80px;
@@ -239,6 +268,12 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .widget {
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+}
 .newsletter__tittle {
   text-transform: uppercase;
   font-size: 14px;
@@ -315,16 +350,24 @@ a {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin-top: 10px;
+    margin-left: 77px;
+  }
+
+  .newsletter__form {
+    display: flex;
+  }
+}
 .banner {
   background-color: #2f303a;
   text-align: center;
   min-height: 400px;
-  min-width: 480px;
+  width: 100%;
   background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-mobile/baner480x400@1x.jpg);
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 480px;
   margin: 0px auto;
 }
 
@@ -360,28 +403,52 @@ a {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .banner {
     min-height: 400px;
     min-width: 768px;
     background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-tablet/banner768x400@x1.jpg);
-    max-width: 768px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .banner {
     background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-tablet/banner768x400@x2.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .banner__tittle {
     font-size: 26px;
     line-height: 162%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .banner {
+    min-height: 400px;
+    max-width: 1200px;
+    background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-desktop/baner1600x600@x1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-desktop/baner1600x600@x2.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner__tittle {
+    font-size: 26px;
+    line-height: 162%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner__tittle {
+    font-size: 44px;
+    line-height: 136%;
+  }
+}
 .lorem {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .lorem__item {
@@ -391,7 +458,7 @@ a {
 
 .lorem__icon {
   background-color: #f5f4fa;
-  width: 450px;
+  width: 100%;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -432,6 +499,24 @@ a {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .lorem {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lorem__icon {
+    width: 270px;
+  }
+
+  .lorem__text {
+    text-align: start;
+  }
+
+  .lorem__tittle {
+    text-align: start;
+  }
+}
 .heading-offer {
   font-size: 36px;
   line-height: 117%;
@@ -442,7 +527,7 @@ a {
 
 .offer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .offer__item {
@@ -545,6 +630,17 @@ a {
     flex-direction: row;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .team__item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 .tittle-customers {
   font-size: 36px;
   line-height: 117%;
@@ -579,6 +675,11 @@ a {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .customers {
+    flex-wrap: nowrap;
+  }
+}
 .backdrop {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2);
@@ -774,11 +875,17 @@ a {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .buttons-sort {
+    justify-content: center;
+  }
+}
 .product {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-content: center;
+  justify-content: center;
 }
 
 .product__item {
@@ -870,5 +977,24 @@ a {
     visibility: hidden;
     pointer-events: none;
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hidde-bnt {
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+  }
+
+  .hidde-naw {
+    visibility: visible;
+    display: flex;
+    pointer-events: all;
+  }
+
+  .hidde-offer {
+    visibility: visible;
+    display: flex;
+    pointer-events: all;
   }
 }/*# sourceMappingURL=main.css.map */

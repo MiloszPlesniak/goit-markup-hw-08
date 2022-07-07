@@ -21,3 +21,22 @@
     display: none;
 }
 }
+@media screen and (min-width:$desktop) {
+    .hidde-bnt {
+            visibility: hidden;
+            pointer-events: none;
+            display: none;
+        }
+        .hidde-naw {
+            visibility: visible;
+            display: flex;
+            pointer-events: all;
+        }
+                .hidde-offer {
+                    visibility: visible;
+                    display: flex;
+                    pointer-events: all;
+                }
+
+
+}

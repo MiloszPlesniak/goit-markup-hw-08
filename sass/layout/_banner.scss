@@ -2,15 +2,16 @@
     background-color: #2f303a;
     text-align: center;
     min-height: 400px;
-    min-width: 480px;
+    width: 100%;
     background-image: linear-gradient(rgba(98, 100, 110, 0.4),
             rgba(98, 100, 110, 0.4)),
         url(../imagines/banner-images/banner-mobile/baner480x400@1x.jpg);
-    background-size: cover;
+    
     background-position: center;
     background-repeat: no-repeat;
-    max-width: $phone;
+    
     margin: 0px auto;
+    
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -50,14 +51,14 @@
     cursor: pointer;
 }
 }
-@media screen and (min-width:$tablet) and (max-width:$desktop) {
+@media screen and (min-width:$tablet) and (max-width:1199px) {
     .banner{
         min-height: 400px;
             min-width: $tablet;
             background-image: linear-gradient(rgba(98, 100, 110, 0.4),
                     rgba(98, 100, 110, 0.4)),
                 url(../imagines/banner-images/banner-tablet/banner768x400@x1.jpg);
-                max-width: $tablet;
+                
     }
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -72,4 +73,33 @@
             font-size: 26px;
             line-height: 162%;
         }
+}
+@media screen and (min-width:$desktop)  {
+    .banner {
+        min-height: 400px;
+        max-width: $desktop;
+        background-image: linear-gradient(rgba(98, 100, 110, 0.4),
+                rgba(98, 100, 110, 0.4)),
+            url(../imagines/banner-images/banner-desktop/baner1600x600@x1.jpg);
+        
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .banner {
+            background-image: linear-gradient(rgba(98, 100, 110, 0.4),
+                    rgba(98, 100, 110, 0.4)),
+                url(../imagines/banner-images/banner-desktop/baner1600x600@x2.jpg);
+        }
+    }
+
+    .banner__tittle {
+        font-size: 26px;
+        line-height: 162%;
+    }
+.banner__tittle{
+    font-size: 44px;
+        line-height: 136%;
+}
 }
