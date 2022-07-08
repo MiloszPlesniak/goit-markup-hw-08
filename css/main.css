@@ -275,6 +275,10 @@ a {
     margin-left: 70px;
   }
 }
+.newsletter {
+  display: block;
+}
+
 .newsletter__tittle {
   text-transform: uppercase;
   font-size: 14px;
@@ -361,6 +365,10 @@ a {
   .newsletter__form {
     display: flex;
   }
+
+  .newsletter__input {
+    width: 358px;
+  }
 }
 .banner {
   background-color: #2f303a;
@@ -426,7 +434,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .banner {
-    min-height: 400px;
+    height: 600px;
     background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url(../imagines/banner-images/banner-desktop/baner1600x600@x1.jpg);
   }
 }
@@ -1035,7 +1043,7 @@ a {
   height: 100vh;
   z-index: 999;
   background-color: #fff;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 250ms ease-in-out;
   padding: 10px 15px 48px 40px;
 }

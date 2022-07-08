@@ -1,5 +1,5 @@
 .newsletter {
-   
+   display: block;
 }
 
 .newsletter__tittle {
@@ -85,5 +85,9 @@
     }
     .newsletter__form{
         display: flex;
+    }
+    .newsletter__input{
+        width: 358px;
+    
     }
 }
