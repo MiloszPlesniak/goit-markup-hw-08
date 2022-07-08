@@ -4,6 +4,7 @@
     margin: 0px auto;
     max-width: 767px;
     
+    
 }
 @media screen and (min-width:$tablet) and (max-width:1199px) {
     .container{
@@ -12,7 +13,7 @@
 }
 @media screen and (min-width:1200px) {
     .container{
-        max-width: 1200px;
+        min-width: 1200px;
         
     }
 }

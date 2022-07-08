@@ -9,7 +9,7 @@
     
     background-position: center;
     background-repeat: no-repeat;
-    
+    background-size: cover;
     margin: 0px auto;
     
 }
@@ -77,7 +77,7 @@
 @media screen and (min-width:$desktop)  {
     .banner {
         min-height: 400px;
-        max-width: $desktop;
+        
         background-image: linear-gradient(rgba(98, 100, 110, 0.4),
                 rgba(98, 100, 110, 0.4)),
             url(../imagines/banner-images/banner-desktop/baner1600x600@x1.jpg);

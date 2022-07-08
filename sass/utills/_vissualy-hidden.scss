@@ -33,3 +33,10 @@
 .is-hidden .modal {
     transform: translate(100%);
 }
+@media screen and (min-width:$desktop) {
+    .modal{
+        width: 528px;
+        height: 581px;
+        
+    }
+}
