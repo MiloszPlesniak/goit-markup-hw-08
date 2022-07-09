@@ -690,6 +690,10 @@ a {
   .customers {
     flex-wrap: nowrap;
   }
+
+  .customres__item {
+    width: 170px;
+  }
 }
 .backdrop {
   position: fixed;
